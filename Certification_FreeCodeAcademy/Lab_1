@@ -1,0 +1,27 @@
+#For this lab, you will use conditional 
+# statements to determine whether commuting is possible based on 
+# the weather, the distance to travel, and the availability of a vehicle.
+
+
+distance_mi = 5
+is_raining = True
+has_bike = True
+has_car = False
+has_ride_share_app = True
+
+if distance_mi == False:
+    print(False)
+elif distance_mi <= 1:
+    if is_raining == False:
+        print(True)
+    else:
+        print(False)
+elif distance_mi >= 1 and distance_mi <= 6:
+    if has_bike == True and is_raining == False:
+        print (True)
+    else:
+        print (False)
+elif distance_mi > 6 and (has_car == True or has_ride_share_app == True):
+    print(True)
+else:
+    print(False)
